@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #00d4ff; /* Teal border */
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #fff; /* White text */
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    color: #fff; /* White text */
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #00d4ff; /* Teal button */
+    color: #fff; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000; /* Black text on hover */
+}
+
+/* General Section Styling */
+.section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fff; /* White text */
+    opacity: 0; /* Start hidden for lazy loading */
+    transition: opacity 0.5s ease-in;
+    display: block; /* Ensure sections are visible */
+}
+
+.section.visible {
+    opacity: 1; /* Fade in when in viewport */
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    color: #00d4ff; /* Teal headings */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Work Experience */
+.timeline {
+    display: block; /* Ensure timeline is visible */
+}
+
+.job {
+    background: #1a1a1a; /* Dark gray card */
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    color: #fff; /* White text */
+}
+
+.job h3 {
+    font-size: 1.5rem;
+    color: #fff; /* White text */
+    margin-bottom: 10px;
+}
+
+.job p {
+    font-style: italic;
+    color: #fff; /* White text */
+    margin-bottom: 10px;
+}
+
+.job ul {
+    list-style: disc;
+    margin-left: 20px;
+    color: #fff; /* White text */
+}
+
+.job ul li {
+    color: #fff; /* White text */
+}
+
+/* Education */
+.education-content {
+    display: block; /* Ensure education content is visible */
+}
+
+.education-content p {
+    margin-bottom: 20px;
+    color: #fff; /* White text */
+}
+
+/* Projects */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    color: #fff; /* White text */
+}
+
+.project-card h3 {
+    color: #fff; /* White text */
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #fff; /* White text */
+}
+
+/* Skills & Certifications */
+.skills-grid {
+    color: #fff; /* White text */
+}
+
+.skills-grid p {
+    margin-bottom: 10px;
+    color: #fff; /* White text */
+}
+
+/* Contact */
+.contact-content {
+    display: block; /* Ensure contact content is visible */
+}
+
+.contact-content p {
+    margin-bottom: 10px;
+    color: #fff; /* White text */
+}
+
+.contact-content a {
+    color: #fff; /* White text for links */
+    text-decoration: underline;
+}
+
+.contact-content a:hover {
+    color: #00d4ff; /* Teal on hover */
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* White text */
+}
